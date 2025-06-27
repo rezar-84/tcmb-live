@@ -1,0 +1,17 @@
+
+<odoo>
+    <record id="view_currency_provider_tcmb_form" model="ir.ui.view">
+        <field name="name">currency.provider.tcmb.form</field>
+        <field name="model">currency.provider</field>
+        <field name="inherit_id" ref="account_accountant.view_currency_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form//header" position="inside">
+                <button name="manual_sync_tcmb_rates"
+                        string="Sync TCMB Rates"
+                        type="object"
+                        class="btn-primary"
+                        attrs="{'invisible': [('provider_class_name', '!=', 'currency.provider.tcmb')]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

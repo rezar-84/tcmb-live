@@ -1,0 +1,8 @@
+<odoo>
+    <record id="currency_provider_tcmb" model="currency.provider">
+        <field name="name">TCMB Forex Buying</field>
+        <field name="provider_class_name">currency.provider.tcmb</field>
+        <field name="service">forex</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
