@@ -3,7 +3,7 @@
     'version': '1.0',
     'category': 'Accounting',
     'summary': 'Fetch Forex Buying rates from Turkish Central Bank (TCMB)',
-    'author': 'ChatGPT',
+    'author': 'rfr',
     'depends': ['account_accountant'],
     'data': [
         'data/tcmb_provider_data.xml',
